@@ -1,0 +1,44 @@
+<section>
+		<h2 class= "title">Resumo</h2>
+			
+		<div class="content">
+			<p ng-repeat="paragrafo in resume">{{paragrafo}}</p>
+		</div>
+		
+</section>
+
+		<section>
+
+		<h2 class="title">Acadêmico</h2>
+			
+		<div class="content">
+
+				<p ng-repeat="informacao in academico">{{informacao.data}} {{informacao.formacao}}</p>
+			
+				<p></p>
+			
+			</div>
+</section>
+
+
+<section>
+
+			<h1 class="title">Solicitação Orçamento</h1>
+			
+			<div class="content">
+			<form>
+
+				<label>Titulo</label>
+				<input type="text" name="titulo" ng-model="orcamento.titulo"><br>
+				<label>Contatos</label>
+				<input type="text" name="contatos" ng-model="orcamento.contatos"><br>
+				<label>Descrição</label>
+				<input type="text" name="descricao" ng-model="orcamento.descricao"><br><br>
+				<button ng-click="solicitarOrcamento(orcamento)">Solicitar</button>
+
+			</form>
+			
+			
+			</div>
+		
+		</section>

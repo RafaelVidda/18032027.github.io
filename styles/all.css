@@ -1,0 +1,63 @@
+*
+{
+	box-sizing: border-box;
+}
+
+/*
+coment - body
+*/
+body
+{
+	background-color: #C5CAE9;
+	margin: 0;
+	font-family: 'Ubuntu', sans-serif;
+}
+/*
+coment - Header
+*/
+header
+{
+	background-color: #3F51B5; 
+	text-align: center;
+	padding: 15px;
+	color: white;
+}
+	header .profile-picture
+	{
+		width:125px;
+		height: 125px;
+		border-radius: 50%;
+	}
+
+/*
+coment - section
+*/
+
+
+section
+{
+	background-color: #7986CB;
+	padding: 15px;
+	margin:25px;
+	border-radius: 1%;
+
+}
+	section .title {
+		color: white;
+
+	}
+	section .content{
+		color: white;
+
+	}
+footer
+{
+	background-color: #3F51B5 ;
+	width: 100%;
+	padding: 15px;
+	text-align: center;
+	color: white;
+}
+/*
+coment - footer 
+*/

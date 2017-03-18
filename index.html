@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!--
+	<html ng>
+	-->
+<html ng-app="sitePessoal">
+	<!--
+	head informaçoes sobre a pagina,configuração.
+	-->
+	<head>
+		<meta charset="UTF-8">
+		<link href="styles/all.css" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+
+		<title>Rafael AC Branco</title>
+
+	</head> 
+	
+	<body ng-controller="mainController">
+		
+		<header>
+			<img class="profile-picture" ng-src="{{foto}}">
+			<h1 >{{nome}}</h1>
+			<h3>{{cargo}}</h3>
+		</header>
+		
+		<ng-view></ng-view>
+		
+
+		<footer>
+			
+			Copyright &copy; {{nome}} - {{ano}}
+		
+		</footer>
+		<!-- Libraries   -->
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
+
+		<!-- Scripts   -->
+		
+		<script src="scripts/app.js"></script>
+		<script src="scripts/app.config.js"></script>		
+
+	</body>
+
+</html>
